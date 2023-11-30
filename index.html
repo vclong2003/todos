@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Long's todos</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>todos</h1>
+      <div class="form-container">
+        <form id="add-todo-form">
+          <!-- Input (add todo) -->
+          <div class="input-item">
+            <div id="check-all-btn" class="check-btn all">
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <input
+              type="text"
+              id="add-todo-input"
+              class="todo-input"
+              placeholder="What needs to be done?"
+              required />
+          </div>
+        </form>
+
+        <!-- Todo items -->
+        <div class="todo-items-container" id="todo-items-container">
+          <!-- ITEMS GOES HERE -->
+          <!-- <div class="todo-item">
+            <div class="check-btn"><i class="bi bi-check2"></i></div>
+            <form>
+              <input type="text" class="todo-item-input" readonly value="ok" />
+            </form>
+            <div class="delete-btn"><i class="bi bi-x-lg"></i></div>
+          </div> -->
+        </div>
+
+        <!-- Bottom buttons -->
+        <div class="btn-container">
+          <div class="left"><span id="items-left">0</span> items left</div>
+          <div class="center" id="switch-mode-btns">
+            <button data-mode="all">All</button>
+            <button data-mode="active">Active</button>
+            <button data-mode="completed">Completed</button>
+          </div>
+          <div class="right" id="clear-completed-btn">Clear completed</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/vclong2003" target="_blank">VCL</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
